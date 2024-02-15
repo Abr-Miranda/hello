@@ -220,3 +220,37 @@ How to run the application?
 4. After asking the four questions, we will log out and log in with the superuser by selecting the "Log In" section at the top.
 
 5. Upon logging in, we will be redirected to the "Home" section (at the top). In this section, we can see all the questions that have been asked by all users. Currently, there are only the four questions that we asked with the other user. We will select each question and provide an answer to each. At this point, we can notice that when we answer the question, we are redirected to the view of that question, meaning the page is refreshed, and we notice two things: our question has been published, but we are also not allowed to answer the same question again. Additionally, we have to return to the "Home" section each time we answer in order to respond to the remaining questions. At this point, we notice that the questions in this section are in a different order. This is because each time we select a question to answer or simply view it, that question receives an additional view. Questions with more views will be placed at the bottom, while those with fewer views will be placed at the top in the "Home" section.
+
+6. When the four questions have been answered, we will log out and log in again with the other user. We notice that we have four notifications. By clicking on the notification icon, we see that all four notifications show that the other user has answered our question (user's name), displaying the question text as well. We will click on each notification and rate each of the other user's responses with a score of 5, granting 20 points to the user who responded. While we rate each response, we notice that the rating bar disappears and the response score is updated without needing to reload the page. Each time we rate, it is necessary to select the notifications again. When a notification is selected, it is marked as read, and the number of notifications for this user decreases by 1.
+
+7. We will log out and log in with the other user again. Similarly, we see four notifications at the top. We will select the notification icon and see that each notification shows that the other user (user's name) has rated our response (response text) with a certain score (score assigned to this response). We will select one of the four notifications and be redirected to the corresponding question where our response was rated.
+
+8. We will select the *profile section (user's name)* at the top. We will see that we can change our profile picture and do so by selecting *"Choose File,"* choosing an image, and saving it. We will see that our profile picture has changed. This section shows various data related to this user, one of which is the **Score**, representing the number of points this user currently has. Since four responses of this user were rated with a score of five, we can see that the user has a total of 20 points.
+
+9. We will select the *Ask* section and ask a **highlighted** question. To do this, we will select the checkbox that says *"Post as highlighted (**20 points**),"* fill in the other fields, and publish the question. This option is only available if the user has a total of 20 points or more. After publishing the question, we can see that we are redirected to the *My Questions* section and notice that the question we asked has a striking color change.
+
+10. We will select the *Home* section and see that our highlighted question is here. We will select the *Categories* section at the top and consecutively select each of the four categories. We will notice that each category contains questions that were asked under that category and are sorted by the number of views in ascending order.
+
+11. With the current user, we will ask six more questions. We select the *Home* section, scroll to the bottom of the page, and move to page 2. As we can see, the second page only has one question, as each page contains a maximum of ten questions, and there are a total of eleven questions for the *Home* section. However, the order of the questions based on views in ascending order is still respected. This same rule applies to any section containing questions; only a maximum of 10 questions per page is allowed. It is important to note that when switching between question pages, the web page is not reloaded, thanks to a methodology using JS to prevent this.
+
+12. We will select the notification icon and choose any notification. While viewing the question, we can click on any username on this page to be redirected to that user's profile page. In this case, we will select the username of the other user. When on this user's profile, we will click the *See questions asked* button. We see that we are redirected to the questions asked by this user. If we want to see our own questions, we simply select the *My Questions* section at the top.
+
+13. In the search bar, we will enter a character, characters, or words that match the text content of at least one of the questions asked so far (the more matches, the better). We see that indeed all questions containing the entered text in the search are displayed, ordering the questions again based on the number of views in ascending order.
+
+14. We log out and see that many of the functions that were performed are not possible to do with a session not initiated, such as answering questions.
+
+15. We log in with the other user (the user who owns the answered questions). We select the notification icon and choose any notification. We notice that we have two options, the *Set question as resolved* option and the *Delete question* option. We will select the *Set question as resolved* option. Instantly, we notice that both options disappear, and if we refresh the page, this question will have the characteristic green color of a resolved question.
+
+16. Again, we select the notification icon and choose any notification (different from the previous step). Similarly, we have the *Set question as resolved* option and the *Delete question* option. We will select the *Delete question* option. Instantly, we notice that we are redirected to the *My Questions* section and notice that the deleted question is no longer there.
+
+17. We select the *Home* section and answer one of the other user's questions.
+
+18. We enter the ***admin*** site in the URL and log in with the super user we created. We can select any of the four models used in this application and add, edit, or delete objects of these models to our liking. We search in the ***Questions*** model for the question answered in the previous step, select the *Resolved* checkbox, and save.
+
+19. We return to the default URL, log out, and register a third user. We search for the question that was marked as resolved in the previous step and notice that despite not having answered with the current user to this question, it is not possible to respond because it has already been marked as resolved. However, we can still rate other users' responses. The responses with the highest accumulated score will appear first.
+
+Additional information
+
+- Each section containing questions will display the 3 characteristic colors that identify them, depending on the type of question: whether the question is highlighted, resolved, or not.
+
+- Each section containing questions will only display a maximum of 10 questions per "question page"; however, when switching between "question pages", the web page does not fully reload, JavaScript was used to prevent this.
