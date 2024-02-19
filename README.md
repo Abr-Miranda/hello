@@ -96,19 +96,19 @@ Complexity: Part of the complexity of this project is related to the use of 4 mo
 
 The navigation bar (_nav_) contains different sections, and each section sends a request to a specific URL when clicked. The following sections and the corresponding URLs for the requests upon clicking will be shown (further explanation of what happens behind these requests will be provided later):
 
-***No login required***
+-***No login required***
 	- *Home*: Clicking on it will send a GET request to the URL named _index_, which is linked to the function *def index*.
 	- *Categories*: Clicking on it will send a GET request to the URL named *show_categories*, which is linked to the function *def show_categories*.
 	- *Search bar*: Pressing the "*Search*" button will send a POST request to the URL named *search*, which is linked to the function *def search*.
 
-***Login required***
+-***Login required***
 	- *Username*: This section will display the name of the current user when logged in. Clicking on it will send a GET request to the URL named _profile_, which is linked to the function *def profile*.
 	- *My Questions*: Clicking on it will send a GET request to the URL named *my_questions*, which is linked to the function *def my_questions*.
 	- *Ask*: Clicking on it will send a GET request to the URL named _ask_, which is linked to the function *def ask*.
 	- *(Notifications)*: Clicking on it will send a GET request to the URL named _notifications_, which is linked to the function *def notifications*.
 	- *Log Out*: Clicking on it will send a GET request to the URL named _logout_, which is linked to the function *def logout*.
 
-***No login required***
+-***No login required***
 	- *Log In*: Clicking on it will send a GET request to the URL named _login_, which is linked to the function *def login*.
 	- *Register*: Clicking on it will send a GET request to the URL named _register_, which is linked to the function *def register*.
 
