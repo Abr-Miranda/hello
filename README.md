@@ -1,10 +1,12 @@
+#Distinctiveness and Complexity
+
 Distinctiveness: My project is different from other projects because it consists of a web page for technological questions and answers. Each user registered on the website will be able to ask questions assigned to different technological categories. They can also answer questions from other users, and the users who view these responses can assign a score to them. This cumulative score will be used to highlight questions, which will feature a continuous and eye-catching animation that will make the question stand out from the rest.
 
 The questions are ordered from least viewed to most viewed, so that questions that have been published for a long time appear on the first pages that most users see, increasing the probability of them being answered. When a user clicks on a question, a view is added to the question and they will be redirected to the expanded view of the question, where the description appears and where users can provide an answer.
 
 There are 3 types of questions: unresolved questions, resolved questions, and highlighted questions. Resolved questions will appear with the color tone `#C9C9D0` (white), unresolved questions with the color tone `#4C8891` (green), and highlighted questions will have a continuous color change starting with the tone `#735492` (purple).
 
-The owner of the question can mark their question as resolved when it contains at least one answer. Once the question has been marked as resolved, it will change to the tone `#4C8891` (applies to highlighted questions as well) and will be closed to further answers but can still be viewed. The owner of the question will also have the option to delete the question, however, once the question has been marked as resolved, it cannot be deleted. When the question is deleted, it will disappear from any place that could display it.
+The owner of the question can mark their question as resolved when it contains at least one answer. Once the question has been marked as resolved, it will change to the tone green `#4C8891` (applies to highlighted questions as well) and will be closed to further answers but can still be viewed. The owner of the question will also have the option to delete the question, however, once the question has been marked as resolved, it cannot be deleted. When the question is deleted, it will disappear from any place that could display it.
 
 Each user can only respond once to each question from other users, and each user can only rate each response from other users once on a scale of 1 to 5. The cumulative score given by users to each response from other users will appear alongside the response. If a user has responded to 5 questions and received a cumulative score of 15 for each of their 5 responses, this user will have a user score of 75 points. These accumulated points can be spent when the user asks a highlighted question. Each highlighted question has a cost of 20 points, so when a user has a quantity equal to or greater than 20 points, an option will be enabled for the user to choose whether they want their question to be highlighted or not. If the user chooses to highlight the question, 20 points will be deducted from their account.
 
@@ -74,9 +76,9 @@ Complexity: Part of the complexity of this project is related to the use of 4 mo
 	- The default order of the questions for the page should be maintained when switching to the previous or next page.
 	- Using JavaScript, the group of questions should be deleted and the new group of 10 questions should be displayed when the user selects the previous or next option to avoid the need to reload the entire page.
 
-Files Created
+#Files Created
 
-Where are they located?
+##Where are they located?
 
 - CSS: answers -> static -> answers
 - HTML: answers -> templates -> answers
@@ -209,7 +211,7 @@ The navigation bar (_nav_) contains different sections, and each section sends a
 
 ***file "media"***: The "media" folder contains a subfolder named "images," where the profile images used by the users and the default images for the app's operation can be found. The default images consist of three items: the notification icon image, the default profile image, and the app's logo image.
 
-How to run the application?
+#How to run the application?
 
 1. Initially, in order to take advantage of user creation, we will create a superuser from the terminal.
 
@@ -249,7 +251,7 @@ How to run the application?
 
 19. We return to the default URL, log out, and register a third user. We search for the question that was marked as resolved in the previous step and notice that despite not having answered with the current user to this question, it is not possible to respond because it has already been marked as resolved. However, we can still rate other users' responses. The responses with the highest accumulated score will appear first.
 
-Additional information
+#Additional information
 
 - Each section containing questions will display the 3 characteristic colors that identify them, depending on the type of question: whether the question is highlighted, resolved, or not.
 
