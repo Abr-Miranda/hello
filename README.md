@@ -1,4 +1,4 @@
-#Distinctiveness and Complexity
+# Distinctiveness and Complexity
 
 Distinctiveness: My project is different from other projects because it consists of a web page for technological questions and answers. Each user registered on the website will be able to ask questions assigned to different technological categories. They can also answer questions from other users, and the users who view these responses can assign a score to them. This cumulative score will be used to highlight questions, which will feature a continuous and eye-catching animation that will make the question stand out from the rest.
 
@@ -76,9 +76,9 @@ Complexity: Part of the complexity of this project is related to the use of 4 mo
 	- The default order of the questions for the page should be maintained when switching to the previous or next page.
 	- Using JavaScript, the group of questions should be deleted and the new group of 10 questions should be displayed when the user selects the previous or next option to avoid the need to reload the entire page.
 
-#Files Created
+# Files Created
 
-##Where are they located?
+## Where are they located?
 
 - CSS: answers -> static -> answers
 - HTML: answers -> templates -> answers
@@ -211,7 +211,7 @@ The navigation bar (_nav_) contains different sections, and each section sends a
 
 ***file "media"***: The "media" folder contains a subfolder named "images," where the profile images used by the users and the default images for the app's operation can be found. The default images consist of three items: the notification icon image, the default profile image, and the app's logo image.
 
-#How to run the application?
+# How to run the application?
 
 1. Initially, in order to take advantage of user creation, we will create a superuser from the terminal.
 
@@ -251,7 +251,7 @@ The navigation bar (_nav_) contains different sections, and each section sends a
 
 19. We return to the default URL, log out, and register a third user. We search for the question that was marked as resolved in the previous step and notice that despite not having answered with the current user to this question, it is not possible to respond because it has already been marked as resolved. However, we can still rate other users' responses. The responses with the highest accumulated score will appear first.
 
-#Additional information
+# Additional information
 
 - Each section containing questions will display the 3 characteristic colors that identify them, depending on the type of question: whether the question is highlighted, resolved, or not.
 
